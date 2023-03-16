@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body::after,.info_box,
+.quiz_box,
+.result_box {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../IMG/principal.jpg");
+    background-size: cover;
+    z-index: -1;
+    opacity: 1;
+}
+h1{
+    margin: 0;
+    font-weight: 500;
+    text-align: center;
+}
+.contenedor{
+    display: flex;
+	justify-content: space-between;
+	padding: 1em;
+	border-radius: 6px;
+	background-color: #fff;
+	box-shadow: rgba(0,0,0,.2) 0 2px 4px;
+}
+.contenedor:not(:last-child) {
+	margin-bottom: 2em;
+}
+.form {
+    --with: 1.8rem;
+	margin: auto;
+	padding: 1em;
+	background: #ffffff;
+	width: 40rem;
+}
+.Form-label {
+    display: flex;
+    align-items: center;
+    color: #8f05aa;
+    font-weight: 400;
+    transition: .3s;
+}
+.Form-label::before {
+    content: "";
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-right: .2em;
+		border: 2px solid;
+		width: var(--with);
+		height: var(--with);
+}
+.Form-label,
+	.Form-input{ cursor: pointer; }
+	.Form-input { display: none; }
+
+	.form-label--checkbox::before {
+		border-radius: 4px;
+	}
+    .Form-input:checked + .form-label--checkbox {
+		color: #fd1403;
+		font-weight: 500;
+	}
+    .Form-input:checked + .form-label--checkbox::before {
+		content:"✔";
+	}
+    .Form-label--radio::before {
+		border-radius: 50%;
+	}
+.REGRESAR{
+    --with: 1.8rem;
+	margin: auto;
+    justify-content: space-between;
+	padding: 1em;
+    border-radius: 1px;
+    background-size: cover;
+    width: 45%;
+    height: 45%;
+    background-color: #8f05aa;
+    color: #fff;
+    border: #ffffff;
+}
+.SIGUIENTE{
+    --with: 1.8rem;
+	margin: auto;
+    justify-content: space-between;
+	padding: 1em;
+    border-radius: 1px;
+    background-size: cover;
+    width: 45%;
+    height: 45%;
+    background-color: #8f05aa;
+    color: #fff;
+    border: #ffffff;
+}
+.form-contact-textarea {
+    width: 100%;
+    color: #292929;
+    font-size: 18px;
+    background-color: #E9E9E9;
+    border: 1px solid #E9E9E9;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    height: 200px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    text-indent: 20px;
+    padding-top: 16px;
+    padding-left: 0;
+    padding-right: 0;
+    font-family: "Arial", Times, serif;
+  }
+  
